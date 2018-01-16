@@ -13,7 +13,7 @@
     "git:add": "git add .",
     "git:commit": "git commit -m",
     "git:push": "git push -u origin master",
-    "deploy": "npm run build && npm run firebase && npm run git",
+    "deploy": "npm run build && npm run firebase ",
     "test": "ng test",
     "pree2e": "webdriver-manager update --standalone false --gecko false",
     "e2e": "protractor"
