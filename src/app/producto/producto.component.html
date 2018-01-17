@@ -1,12 +1,12 @@
 <div>
   <h2>{{nombre}}</h2>
   <ol>
-    <li>detail: {{ detail}}</li>
+    <li>Detalle: {{ detalle}}</li>
     <li>precioVenta: {{ precioVenta}}
       <li> precioCompra: {{ precioCompra}}</li>
       <li>cantidad: {{ cantidad}}</li>
-      <li>
-        <span *ngIf="foto">{{foto}}</span>
-      </li>
+      <span *ngIf="foto==null">
+        <li>{{foto}}</li>
+      </span>
   </ol>
 </div>

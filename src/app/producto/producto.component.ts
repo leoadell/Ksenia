@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductoComponent implements OnInit {
 
-  public name: string;
-  public detail: string;
+  public nombre: string;
+  public detalle: string;
   public foto: string;
   public precioVenta: number;
   public precioCompra: number;
@@ -16,8 +16,8 @@ export class ProductoComponent implements OnInit {
 
   constructor() {
     this.cantidad = 20;
-    this.detail = "hilo negro carretel chico de 10mts marca cadena";
-    this.name = "Hilo negro";
+    this.detalle = "hilo negro carretel chico de 10mts marca cadena";
+    this.nombre = "Hilo negro";
     this.precioCompra = 12;
     this.precioVenta = 20;
   }
