@@ -11,7 +11,5 @@ export class HomeComponent implements OnInit {
   title = "HOME";
   ngOnInit() {
     console.log("home.component cargado");
-
   }
-
 }
