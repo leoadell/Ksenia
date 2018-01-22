@@ -1,9 +1,33 @@
-<h1>
-  {{title}}
-</h1>
-<a [routerLink]="['/home']">Inicio</a>
-<a [routerLink]="['/cliente']">Cliente</a>
-<a [routerLink]="['/producto']">Producto</a>
-<a [routerLink]="['/proveedor']">Proveedor</a>
+<div class="navigation col-lg 12">
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+
+      <div class="navbar-header">
+        <a [routerLink]="['/home']" class="navbar-brand">{{title}}</a>
+      </div>
+
+      <ul class="nav navbar-nav">
+        <li>
+          <a [routerLink]="['/home']">
+            <span class="glyphicon glyphicon-home"></span>Inicio</a>
+        </li>
+        <li>
+          <a [routerLink]="['/cliente']">
+            <span class="glyphicon glyphicon-star"></span>Cliente</a>
+        </li>
+        <li>
+          <a [routerLink]="['/producto']">
+            <span class="glyphicon glyphicon-gift"></span>Producto</a>
+        </li>
+        <li>
+          <a [routerLink]="['/proveedor']">
+            <span class="glyphicon glyphicon-comment"></span>Proveedor</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
 <hr>
-<router-outlet></router-outlet>
+<div class="col-lg-11">
+  <router-outlet></router-outlet>
+</div>
