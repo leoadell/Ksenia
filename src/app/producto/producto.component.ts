@@ -2,8 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'producto',
-  templateUrl: './producto.component.html',
-  styleUrls: ['./producto.component.css']
+  templateUrl: './producto.component.html'
 })
 export class ProductoComponent implements OnInit {
 
@@ -21,8 +20,7 @@ export class ProductoComponent implements OnInit {
     this.precioCompra = 12;
     this.precioVenta = 20;
   }
-
   ngOnInit() {
+    console.log("producto.component cargado");
   }
-
 }

@@ -9,7 +9,7 @@ import { CurrencyPipe } from '@angular/common/src/pipes/number_pipe';
 
 export class AppComponent {
 
-  title = 'Ksenia stock!';
+  title = 'Ksenia Stock!';
 
   constructor() {  }
 }
