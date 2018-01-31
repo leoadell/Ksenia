@@ -4,6 +4,10 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { routing, appRoutingProviders } from './app.routing';
 
+//modulo
+import{AdminModule }from './admin/admin.module';
+
+//componentes
 import { AppComponent } from './app.component';
 import { ProductoComponent } from './producto/producto.component';
 import { ProveedorComponent } from './proveedor/proveedor.component';
@@ -31,7 +35,6 @@ import { MainComponent } from './admin/components/main/main.component';
     FormsModule,
     HttpModule,
     routing
-
   ],
   providers: [
     appRoutingProviders
