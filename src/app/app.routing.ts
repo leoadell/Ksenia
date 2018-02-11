@@ -1,5 +1,6 @@
 import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { NgModule } from '@angular/core';
 
 //Components
 import { AppModule } from 'app/app.module';
@@ -19,5 +20,12 @@ const appRoutes: Routes = [
     { path: 'proveedor', component: ProveedorComponent },
     { path: '**', component: HomeComponent }
 ];
+@NgModule({
+    imports: [ RouterModule.forRoot(appRoutes, { enableTracing: true }) ],
+    exports: [ RouterModule ]
+    })
+    export class AppRoutingModule {}
+
+
 export const appRoutingProviders: any[] = [];
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);

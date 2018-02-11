@@ -34,7 +34,8 @@ import { MainComponent } from './admin/components/main/main.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    routing
+    routing,
+    AdminModule
   ],
   providers: [
     appRoutingProviders

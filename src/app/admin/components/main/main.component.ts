@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'admin-main',
@@ -6,6 +6,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainComponent {
 
- title='Panel de administración';
+ titleMain='Panel de administración';
 
 }

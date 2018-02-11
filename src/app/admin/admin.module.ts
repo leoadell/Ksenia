@@ -23,13 +23,13 @@ import { EditComponent } from './components/Edit/Edit.component';
         FormsModule,
         HttpModule,
         AdminRoutingModule
-    ],
+    ]/*,
     exports: [
         MainComponent,
         ListComponent,
         AddComponent,
         EditComponent
     ],
-    providers: []
+    providers: []*/
 })
-export class AdminModule {}
+export class AdminModule { }
