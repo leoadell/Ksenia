@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
 })
 export class MainComponent {
 
- titleMain='Panel de administración';
+  title='Panel de administración';
 
 }

@@ -7,9 +7,9 @@ import { AdminRoutingModule } from './admin-routing.module';
 
 //Componenetes
 import { MainComponent } from './components/main/main.component';
-import { ListComponent } from './components/List/List.component';
-import { AddComponent } from './components/Add/Add.component';
-import { EditComponent } from './components/Edit/Edit.component';
+import { ListComponent } from './components/list/list.component';
+import { AddComponent } from './components/add/add.component';
+import { EditComponent } from './components/edit/edit.component';
 
 @NgModule({
     declarations: [
@@ -23,13 +23,13 @@ import { EditComponent } from './components/Edit/Edit.component';
         FormsModule,
         HttpModule,
         AdminRoutingModule
-    ]/*,
+    ],
     exports: [
         MainComponent,
         ListComponent,
         AddComponent,
         EditComponent
     ],
-    providers: []*/
+    providers: []
 })
 export class AdminModule { }

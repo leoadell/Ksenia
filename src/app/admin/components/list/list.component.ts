@@ -6,6 +6,6 @@ import { Component} from '@angular/core';
 })
 export class ListComponent {
 
- titleList='Listar';
-
+  title='Listar';
+  numbers=new Array(250);
 }

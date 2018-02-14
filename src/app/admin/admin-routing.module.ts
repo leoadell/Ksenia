@@ -4,9 +4,9 @@ import { NgModule } from '@angular/core';
 
 //Componenetes
 import { MainComponent } from './components/main/main.component';
-import { ListComponent } from './components/List/List.component';
-import { AddComponent } from './components/Add/Add.component';
-import { EditComponent } from './components/Edit/Edit.component';
+import { ListComponent } from './components/list/list.component';
+import { AddComponent } from './components/add/add.component';
+import { EditComponent } from './components/edit/edit.component';
 
 const adminRoutes: Routes = [
     {
