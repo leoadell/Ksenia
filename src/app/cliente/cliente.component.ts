@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 export class ClienteComponent implements OnInit {
 
   constructor() {  }
-    title = "cliente";
+  title = "cliente";
 
   ngOnInit() {
     console.log("cliente.component cargado");

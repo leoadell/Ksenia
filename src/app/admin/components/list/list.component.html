@@ -1,0 +1,36 @@
+<div class="col-lg-12">
+    <h3>{{title}}</h3>
+    <table class="table table-hover">
+        <thead class="thead-default">
+            <tr>
+                <th>Nombre</th>
+                <th>Cantidad</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let n of numbers; let i =index">
+                <td>Hilo Negro {{ i + 1}}</td>
+                <td>300</td>
+                <td>
+                    <button class="btn btn-sm btn-success">
+                        <span class="glyphicon glyphicon-eye-open"></span>
+                        Ver
+                    </button>
+                </td>
+                <td>
+                    <button class="btn btn-sm btn-warning">
+                        <span class="glyphicon glyphicon-pencil "></span>
+                        Editar
+                    </button>
+                </td>
+                <td>
+                    <button class="btn btn-sm btn-danger">
+                        <span class="glyphicon glyphicon-trash"></span>
+                        Eliminar
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
