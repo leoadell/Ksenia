@@ -4,6 +4,9 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { routing, appRoutingProviders } from './app.routing';
 
+import {AngularFireModule } from 'angularfire2';
+import{AngularFirestoreModule} from 'angularfire2/firestore';
+
 //modulo
 import{AdminModule }from './admin/admin.module';
 
@@ -13,6 +16,7 @@ import { ProductoComponent } from './producto/producto.component';
 import { ProveedorComponent } from './proveedor/proveedor.component';
 import { HomeComponent } from './home/home.component';
 import { ClienteComponent } from './cliente/cliente.component';
+import { environment } from 'environments/environment';
 
 @NgModule({
   declarations: [
@@ -27,7 +31,9 @@ import { ClienteComponent } from './cliente/cliente.component';
     FormsModule,
     HttpModule,
     routing,
-    AdminModule
+    AdminModule, 
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule.enablePersistence(),
   ],
   providers: [
     appRoutingProviders

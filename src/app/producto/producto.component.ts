@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import{AngularFirestore} from 'angularfire2/firestore';
 
 @Component({
   selector: 'producto',
@@ -16,7 +17,7 @@ export class ProductoComponent implements OnInit {
   constructor() {
     this.cantidad = 20;
     this.detalle = "hilo negro carretel chico de 10mts marca cadena";
-    this.nombre = "Hilo negro";
+    this.nombre = "Hilosss negrosss";
     this.precioCompra = 12;
     this.precioVenta = 20;
   }
